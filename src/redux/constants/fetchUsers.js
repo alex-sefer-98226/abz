@@ -1,0 +1,4 @@
+export const FETCH_USERS = "FETCH_USERS";
+export const REFRESH_USERS = "REFRESH_USERS";
+export const USERS_LOADING = "USERS_LOADING";
+export const USERS_LOADED = "USERS_LOADED";

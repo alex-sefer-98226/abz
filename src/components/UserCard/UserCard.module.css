@@ -1,0 +1,71 @@
+.userCard {
+  width: 200px;
+  display: flex;
+  flex-flow: column wrap;
+  margin: 20px 5% 8px;
+}
+
+.userPhotoContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 35px;
+}
+
+.userPhoto {
+  border-radius: 50%;
+}
+
+.userName {
+  display: block;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 17px;
+}
+
+.userPosition {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.userEmail {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 0 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+
+.userPhone {
+  display: block;
+  width: 100%;
+  margin-bottom: 12px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+}
+.userEmailLink {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+@media (max-width: 1024px) {
+  .userCard {
+    margin: 20px 3%;
+  }
+}
+@media (max-width: 768px) {
+  .userCard {
+    margin: 20px 3%;
+  }
+}

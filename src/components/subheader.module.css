@@ -1,0 +1,17 @@
+.subheader {
+  display: block;
+  width: 100%;
+  margin: 1em 0;
+  font-size: 16px;
+  line-height: 24px;
+}
+@media (max-width: 1024px) {
+  .subheader {
+    margin-top: -26px;
+  }
+}
+@media (max-width: 768px) {
+  .subheader {
+    margin-top: -45px;
+  }
+}

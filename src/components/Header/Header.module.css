@@ -1,0 +1,138 @@
+.header {
+  width: 100%;
+  max-width: 1170px;
+  height: 60px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 20px 30px;
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  margin-right: 32px;
+}
+
+.navigationList {
+  list-style: none;
+  display: flex;
+  flex-flow: row wrap;
+  padding-left: 0;
+  align-items: center;
+}
+
+.navigationListItems {
+  font-size: 14px;
+  position: relative;
+  margin-left: 28px;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.navigationLink {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.navigationLink:hover {
+  color: rgb(239, 91, 76);
+}
+.navigationSwitcher,
+.navigationSwitcherIcon,
+.navigationMobileMockup {
+  display: none;
+}
+.navigationSwitcherIcon:hover {
+  cursor: pointer;
+}
+@media (max-width: 1023px) {
+  .navigation {
+    width: 100vw;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    left: -160vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    top: 60px;
+  }
+
+  .navigationList {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    width: 50vw;
+    height: 100vh;
+    top: 60px;
+    left: 0;
+    margin-top: 0;
+    background-color: white;
+  }
+
+  .navigationLink:hover {
+    color: rgb(27, 74, 138);
+  }
+  .navigationSwitcher {
+    display: none;
+    position: relative;
+    right: 0;
+  }
+  .navigationSwitcherIcon {
+    display: block;
+    position: fixed;
+    right: 24px;
+    top: 22px;
+  }
+  .navigationListItems {
+    display: block;
+    margin-left: 15px;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+  .opened {
+    left: 0;
+    transition: 0.5s all;
+  }
+  .hided {
+    left: -100vw;
+    transition: 0.5s all;
+  }
+}
+@media (max-width: 568px) {
+  .header {
+    height: 40px;
+  }
+  .logo {
+    padding: 10px 0 10px 15px;
+  }
+  .navigation,
+  .navigationList {
+    top: 40px;
+  }
+  .navigationSwitcherIcon {
+    top: 13px;
+    right: 9px;
+  }
+  .navigationList {
+    padding-top: 8px;
+    width: 76.5vw;
+  }
+}
